@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Permutation Input</title>
+</head>
+<body>
+    <form method="post" action="{% url 'display_permutations' %}">
+        {% csrf_token %}
+        <label for="word">Enter a word:</label>
+        <input type="text" id="word" name="word" required>
+        <button type="submit">Get Permutations</button>
+    </form>
+</body>
+</html>

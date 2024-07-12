@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encode Message</title>
+</head>
+<body>
+    <h1>Enter Message to Encode</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="message" rows="4" cols="50"></textarea><br>
+        <button type="submit">Encode</button>
+    </form>
+</body>
+</html>
